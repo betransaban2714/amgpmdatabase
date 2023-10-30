@@ -1,0 +1,126 @@
+/* style.css */
+
+body {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #2196F3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+
+form {
+  background-color: #1E2744;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  color: #2196F3;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+button,
+input[type="file"] {
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #2196F3;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Menambahkan aturan CSS untuk gambar dalam tabel */
+table img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 50px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+  height: 50px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+}
+
+/* Menggunakan media query untuk tampilan seluler */
+@media (max-width: 767px) {
+  .form-group input[type="text"],
+  .form-group select {
+    width: 80%;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* style.css */
+
+/* Tambahkan gaya untuk pesan alert tengah layar */
+.alert-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1E2744;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+/* style.css */
+
+/* Tambahkan gaya untuk pesan alert tengah layar */
+.alert-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1E2744;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  border: 2px solid #2196F3; /* Tambahkan border */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Anggota</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Data Anggota</h1>
+  <div class="container">
+    <table>
+      <tr>
+        <th>Nomor Urutan</th>
+        <th>Gambar</th>
+        <th>Nama</th>
+        <th>Tempat Tanggal Lahir</th>
+        <th>Jenis Kelamin</th>
+        <th>Status</th>
+        <th>Pendidikan</th>
+      </tr>
+      <!-- Data anggota akan ditampilkan di sini -->
+    </table>
+
+    <form id="anggota-form">
+      <div class="form-group">
+        <label for="gambar-input">Gambar:</label>
+        <input type="file" id="gambar-input" accept="image/*" onchange="previewImage(event)">
+      </div>
+      <img id="gambar-preview" src="" alt="Preview Gambar" style="max-width: 100px; max-height: 100px">
+      <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" placeholder="Nama">
+      </div>
+      <div class="form-group">
+        <label for="tempat-tanggal-lahir">Tempat Tanggal Lahir:</label>
+        <input type="text" id="tempat-tanggal-lahir" placeholder="Tempat Tanggal Lahir">
+      </div>
+      <div class="form-group">
+        <label for="jenis-kelamin">Jenis Kelamin:</label>
+        <select id="jenis-kelamin">
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <select id="status">
+          <option value="Ketua">Ketua</option>
+          <option value="Pengurus">Pengurus</option>
+          <option value="Anggota">Anggota</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="pendidikan">Pendidikan:</label>
+        <input type="text" id="pendidikan" placeholder="Pendidikan">
+      </div>
+      <button type="button" onclick="tambahAnggota()">Tambah</button>
+    </form>
+    <p id="pesan-terimakasih" style="display: none;">Terima kasih telah mengisi formulir. Data Anda akan diproses.</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
