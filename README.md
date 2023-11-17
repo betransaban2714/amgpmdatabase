@@ -1,2 +1,0 @@
-# amgpmdatabase
-dbamgpm
